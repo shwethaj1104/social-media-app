@@ -1,1 +1,1 @@
-# social media app
+# Social media application
