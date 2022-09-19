@@ -1,7 +1,10 @@
 import { MoreVert } from '@material-ui/icons'
 import './post.css'
+import { Users } from '../../dummyData'
 
 const Post = (post) => {
+    const user = Users.filter(u=>u.id===1)
+    console.log("user",user)
     console.log("post......",post.post)
     let inidividualPost = post.post
   return (
@@ -9,8 +12,10 @@ const Post = (post) => {
         <div className="postWrapper">
             <div className="postTop">
                 <div className="postTopLeft">
-                    <img src="/assets/person/1.jpeg" alt="" className="postProfileImg" />
-                    <span className="postUsername">Shwetha</span>
+                    <img src={Users.filter((u)=>u.id === inidividualPost.userId)[0].profilePicture} alt="" className="postProfileImg" />
+                    <span className="postUsername">
+                        {Users.filter((u)=>u.id === inidividualPost.userId)[0].username}
+                    </span>
                     <span className="postDate">{inidividualPost.date}</span>
                 </div>
                 <div className="postTopRight">
