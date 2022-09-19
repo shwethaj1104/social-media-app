@@ -15,6 +15,7 @@ const Rightbar = () => {
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
               <img src="assets/person/3.jpeg" alt="" className="rightbarProdileImg" />
+              <span className="rightbarOnline"></span>
             </div>
           </li>
         </ul>
