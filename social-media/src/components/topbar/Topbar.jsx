@@ -6,12 +6,12 @@ import { useEffect } from "react";
 
 
 const Topbar = () => {
-    const [name,setName]=useState("Go To Profile")
-    const [rounterLink,setRounterLink]=useState("/profile")
-    const changeName=()=>{
-        setName(name==="Go To Profile" ? "Go To Home" : "Go To Profile")
-        setRounterLink(rounterLink==="/profile" ? "/" : "/profile")
-    }
+    // const [name,setName]=useState("Go To Profile")
+    // const [rounterLink,setRounterLink]=useState("/profile")
+    // const changeName=()=>{
+    //     setName(name==="Go To Profile" ? "Go To Home" : "Go To Profile")
+    //     setRounterLink(rounterLink==="/profile" ? "/" : "/profile")
+    // }
 
     return (
         <div className="topbarContainer">
@@ -26,8 +26,8 @@ const Topbar = () => {
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
-                    <span className="topbarLink">Home</span>
-                    <span className="topbarLink">TimeLine</span>
+                <Link  className="goToProfile topbarLink" to="/">Home</Link>
+                <Link className="goToProfile topbarLink" to="/profile">Profile</Link>
                 </div>
                 <div className="topbarIcons">
                     <div className="topbarIconItem">
@@ -44,7 +44,6 @@ const Topbar = () => {
                     </div>
                 </div>
                 <img src="/assets/person/1.jpeg" alt="profile Image" className="topbarImg" />
-                <Link onClick={changeName} className="goToProfile" to={rounterLink}>{name}</Link>
             </div>
         </div>
     )
