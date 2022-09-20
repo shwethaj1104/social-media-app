@@ -3,7 +3,7 @@ import { Users } from '../../dummyData'
 import Online from '../online/Online'
 
 const Rightbar = ({profile}) => {
-  const HomRightBar = ()=>{
+  const HomeRightBar = ()=>{
     return(
       <>
        <div className="birthdayContainer"><img src="assets/gift.png" alt="" className="birthdayImg" />
@@ -63,6 +63,10 @@ const Rightbar = ({profile}) => {
           <img src="assets/person/4.jpeg" alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingname">John snow</span>
         </div>
+        <div className="rightbarFollowing">
+          <img src="assets/person/7.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingname">John snow</span>
+        </div>
       </div>
       </>
      )
@@ -70,7 +74,8 @@ const Rightbar = ({profile}) => {
   return (
     <div className='rightbar'>
       <div className="rightbarWrapper">
-    <ProfileRightBar />
+        {(profile ? <ProfileRightBar /> : <HomeRightBar />)}
+    {/* <ProfileRightBar /> */}
       </div>
     </div>
   )
