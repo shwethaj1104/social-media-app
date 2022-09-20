@@ -59,6 +59,7 @@
 }
 .postLikeCounter{
     font-size: 15px;
+    margin-right:0.5rem
 }
 .postCommentText{
     cursor: pointer;
