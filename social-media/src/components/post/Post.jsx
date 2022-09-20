@@ -6,7 +6,9 @@ import { useState } from 'react'
 const Post = (post) => {
     let inidividualPost = post.post
     const [like,setLike]=useState(inidividualPost.like)
+    const [heart,setHeart]=useState(inidividualPost.like-1)
     const [isLiked,setIsLiked]=useState(false)
+    const [isLoved,setIsLoved]=useState(false)
     const user = Users.filter(u=>u.id===1)
     console.log("user",user)
     console.log("post......",post.post)
@@ -15,7 +17,8 @@ const Post = (post) => {
         setIsLiked(!isLiked)
     }
     const onHeartClick=()=>{
-
+        setHeart(isLoved ? heart-1 : heart+1)
+        setIsLoved(!isLoved)
     }
   return (
     <div className='post'>
@@ -39,8 +42,9 @@ const Post = (post) => {
             <div className="postBottom">
                 <div className="postBottomLeft">
                     <img src="assets/like.png" alt="" onClick={onLikeClick} className="likeIcon" />
-                    <img src="assets/heart.png" alt="" onClick={onHeartClick} className="likeIcon" />
                     <span className="postLikeCounter">{like} people likes it </span>
+                    <img src="assets/heart.png" alt="" onClick={onHeartClick} className="likeIcon" />
+                    <span className="postLikeCounter">{heart} people loves it </span>
                 </div>
                 <div className="postBottomRight">
                     <span className="postCommentText">{inidividualPost.comment} comments </span>
