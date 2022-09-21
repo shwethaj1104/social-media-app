@@ -68,4 +68,12 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.errorMessage{
+    color: red;
+    font-weight: 200;
 }
