@@ -45,7 +45,7 @@ const Register = () => {
                     <button className="loginButton" onClick={onRegister}>Sign Up</button>
                 {error ? <p className='errorMessage'>{error}</p>:<></>}
 
-                    <Link to="/login" className="loginRegisterButton">Create New account</Link>
+                    <Link to="/" className="loginRegisterButton">Already have an account?</Link>
                     {/* <button className="loginRegisterButton" >Login to your account</button> */}
                     </form>
                 {/* </div> */}
