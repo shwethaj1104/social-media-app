@@ -1,13 +1,18 @@
 import { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './login.css'
 
 const Login = () => {
     const form = useRef();
+    const navigate = useNavigate();
+    const [error,setError] = useState()
 
     const onLogin = (e) => {
         e.preventDefault();
-        console.log("formDetails",formDetails)
+        if(formDetails.email && formDetails.password){
+            navigate('/home');
+        }else{setError("Please fill email and password !")}
+        setTimeout(() => {setError("")}, 3000);
     }
 
     const formInitialDetails = {
@@ -36,6 +41,7 @@ const Login = () => {
                     <input placeholder='Email'  value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} className="loginInput" />
                     <input placeholder='Password'  value={formDetails.password} onChange={(e) => onFormUpdate('password', e.target.value)} className="loginInput" />
                     <button className="loginButton" onClick={onLogin}>Login</button>
+                {error ? <p className='errorMessage'>{error}</p>:<></>}
                     <span className="loginForgot">Forgot Password</span>
                     {/* <button className="loginRegisterButton">Create New account</button> */}
                     <Link to="/register" className="loginRegisterButton">Create New account</Link>
