@@ -26,7 +26,7 @@ const Topbar = () => {
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
-                <Link className="goToProfile topbarLink" to="/">Home</Link>
+                <Link className="goToProfile topbarLink" to="/home">Home</Link>
                 <Link className="goToProfile topbarLink" to="/profile">Profile</Link>
                 </div>
                 <div className="topbarIcons">
