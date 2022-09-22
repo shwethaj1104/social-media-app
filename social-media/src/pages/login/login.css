@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: url("assets/social.jfif"); */
 }
 .loginWrapper{
     width: 70%;
@@ -17,6 +18,12 @@
     flex-direction: column;
     justify-content: center;
 }
+/* .loginImg{
+    height: 100%;
+    width: 96%;
+    object-fit: cover;
+    border-radius: 1rem;
+} */
 .loginLogo{
     font-size: 50px;
     font-weight: 800;
