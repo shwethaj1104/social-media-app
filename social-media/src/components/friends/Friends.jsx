@@ -1,11 +1,11 @@
 import './friends.css'
 
-const Friends = ({user}) => {
+const Friends = ({ user }) => {
   return (
     <li className="sidebarFriend">
-                    <img src={user.profilePicture} alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">{user.username} </span>
-                </li>
+      <img src={user.profilePicture} alt="" className="sidebarFriendImg" />
+      <span className="sidebarFriendName">{user.username} </span>
+    </li>
   )
 }
 
