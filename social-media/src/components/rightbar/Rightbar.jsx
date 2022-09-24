@@ -17,9 +17,7 @@ const Rightbar = ({ profile }) => {
           {Users.map(u => (
             <Online key={u.id} user={u} />
           ))}
-
         </ul>
-
       </>
     )
   }
@@ -75,7 +73,6 @@ const Rightbar = ({ profile }) => {
     <div className='rightbar'>
       <div className="rightbarWrapper">
         {(profile ? <ProfileRightBar /> : <HomeRightBar />)}
-        {/* <ProfileRightBar /> */}
       </div>
     </div>
   )
