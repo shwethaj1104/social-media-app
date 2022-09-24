@@ -1,57 +1,69 @@
-.share{
+.share {
     width: 100%;
     height: 170px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.shareWrapper{
+
+.shareWrapper {
     padding: 10px;
 }
-.shareTop{
+
+.shareTop {
     display: flex;
     align-items: center;
 }
-.shareProfileImg{
+
+.shareProfileImg {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
 }
-.shareInput{
+
+.shareInput {
     border: none;
     width: 80%;
 }
-.shareInput:focus{
+
+.shareInput:focus {
     outline: none;
 }
-.shareHr{
+
+.shareHr {
     margin: 20px;
 }
-.shareBottom{
+
+.shareBottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.shareOptions{
+
+.shareOptions {
     display: flex;
     margin-left: 20px;
 }
-.shareOption{
+
+.shareOption {
     display: flex;
     align-items: center;
     margin-right: 15px;
     cursor: pointer;
 }
-.shareIcon{
+
+.shareIcon {
     font-size: 18px;
     margin-right: 3px;
 }
-.shareOptionText{
+
+.shareOptionText {
     font-size: 14px;
     font-weight: 500;
 }
-.shareButton{
+
+.shareButton {
     border: none;
     padding: 7px;
     border-radius: 5px;
