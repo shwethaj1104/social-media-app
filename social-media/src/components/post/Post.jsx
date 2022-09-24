@@ -10,8 +10,7 @@ const Post = (post) => {
     const [isLiked, setIsLiked] = useState(false)
     const [isLoved, setIsLoved] = useState(false)
     const user = Users.filter(u => u.id === 1)
-    console.log("user", user)
-    console.log("post......", post.post)
+
     const onLikeClick = () => {
         setLike(isLiked ? like - 1 : like + 1)
         setIsLiked(!isLiked)
@@ -20,6 +19,7 @@ const Post = (post) => {
         setHeart(isLoved ? heart - 1 : heart + 1)
         setIsLoved(!isLoved)
     }
+    
     return (
         <div className='post'>
             <div className="postWrapper">
