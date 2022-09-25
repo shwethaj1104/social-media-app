@@ -1,18 +1,9 @@
 import { Chat, Notifications, Person, Search } from "@material-ui/icons"
 import "./topbar.css"
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
 
 
 const Topbar = () => {
-    // const [name,setName]=useState("Go To Profile")
-    // const [rounterLink,setRounterLink]=useState("/profile")
-    // const changeName=()=>{
-    //     setName(name==="Go To Profile" ? "Go To Home" : "Go To Profile")
-    //     setRounterLink(rounterLink==="/profile" ? "/" : "/profile")
-    // }
-
     return (
         <div className="topbarContainer">
             <div className="topbarLeft">
