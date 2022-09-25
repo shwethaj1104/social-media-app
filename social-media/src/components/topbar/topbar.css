@@ -93,7 +93,8 @@
     object-fit: cover;
     cursor: pointer;
 }
-.goToProfile{
+
+.goToProfile {
     text-decoration: none;
     color: white;
 }
