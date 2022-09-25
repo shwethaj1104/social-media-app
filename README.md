@@ -1,6 +1,6 @@
 # Social media app
 
-Home page:
+Home page :
 
 User will be able to navigate to profile/Home page using the home and profile tabs given in the header section
 
