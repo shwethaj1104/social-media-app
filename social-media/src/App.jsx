@@ -7,8 +7,6 @@ import Register from "./pages/register/Register";
 
 const App = () => {
   return (
-    // <Home />
-    // <Profile />
     <BrowserRouter>
       <Routes>
         <Route path='/' >
