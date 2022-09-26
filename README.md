@@ -1,5 +1,7 @@
 # Social media app
 
+Application developed on React.js latest version 18.2.0
+
 Home page :
 
 User will be able to navigate to profile/Home page using the home and profile tabs given in the header section
