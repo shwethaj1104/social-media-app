@@ -1,4 +1,4 @@
-# Social media application
+# Social media app
 
 Home page :
 
