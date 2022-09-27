@@ -2,7 +2,7 @@
 
 Application developed on React.js latest version 18.2.0
 
-login page
+login page:
 ![image](https://user-images.githubusercontent.com/107784718/192439883-7c72b123-c491-4b18-a528-b6d16aca60b5.png)
 
 
