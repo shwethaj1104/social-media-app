@@ -1,4 +1,4 @@
-# Social media app
+# Social media application
 
 Application developed on React.js latest version 18.2.0
 
