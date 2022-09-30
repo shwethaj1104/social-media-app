@@ -8,7 +8,7 @@ New users can register via "Create New Account" button provided.
 ![image](https://user-images.githubusercontent.com/107784718/192439883-7c72b123-c491-4b18-a528-b6d16aca60b5.png)
 
 
-register page :
+Register page :
 
 ![image](https://user-images.githubusercontent.com/107784718/192439700-99ab7baf-c0e0-4bb2-a07e-b86266d857c3.png)
 
