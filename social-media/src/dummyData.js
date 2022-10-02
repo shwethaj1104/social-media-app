@@ -109,7 +109,7 @@ export const Posts = [
     date: "2 days ago",
     userId: 7,
     like: 82,
-    comment: 3,
+    comment: 30,
   },
   {
     id: 8,
