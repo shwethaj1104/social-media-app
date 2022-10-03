@@ -67,7 +67,7 @@ export const Posts = [
     date: "15 mins ago",
     userId: 2,
     like: 209,
-    comment: 50,
+    comment: 40,
   },
   {
     id: 3,
