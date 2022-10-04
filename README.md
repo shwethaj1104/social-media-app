@@ -1,6 +1,6 @@
 # Social media application
 
-Application developed on React.js latest version 18.2.0
+Application developed on React.js latest version 18.2.0.
 
 Login page : User will be landing on login page.
 New users can register via "Create New Account" button provided.
