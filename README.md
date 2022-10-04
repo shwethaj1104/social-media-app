@@ -2,7 +2,8 @@
 
 Application developed on React.js latest version 18.2.0.
 
-Login page : User will be landing on login page.
+Login page :
+User will be landing on login page.
 New users can register via "Create New Account" button provided.
 
 ![image](https://user-images.githubusercontent.com/107784718/192439883-7c72b123-c491-4b18-a528-b6d16aca60b5.png)
